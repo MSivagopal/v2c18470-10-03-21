@@ -1,0 +1,31 @@
+package com.test.oops;
+
+import java.util.Scanner;
+
+public class cal {
+
+	public static void main(String[] args) {
+		double num1, num2, result;
+		char op;
+		System.out.println("Enter the values");
+		Scanner sc = new Scanner(System.in);
+		num1 = sc.nextDouble();
+		num2 = sc.nextDouble();
+		System.out.println("Enter the operations: + - * /");
+		op = sc.next().charAt(0);
+		switch(op) {
+		case '+': result=num1+num2;
+		break;
+		case '-': result=num1-num2;
+		break;
+		case '*': result=num1*num2;
+		break;
+		case '/': result=num1/num2;
+		break;
+		default : System.out.println("Error");
+		return;
+		}
+		System.out.println("Results:" + num1 + " " + op + " " + num2 + " = " + result);
+	}
+
+}

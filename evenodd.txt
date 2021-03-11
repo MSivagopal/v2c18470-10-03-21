@@ -1,0 +1,23 @@
+package pattern;
+
+import java.util.Scanner;
+
+public class evenodd {
+
+	public static void main(String[] args) {
+		int num;
+		System.out.println("Enter the value");
+		num = new Scanner(System.in).nextInt();
+		//Scanner b = new Scanner(System.in);
+		//num = b.nextInt();
+		if( num % 2==0)
+		{
+			System.out.println("number is even: "+ num);
+		}
+		else
+		{
+			System.out.println("number is odd: "+ num);
+		}
+	}
+
+}
